@@ -10,7 +10,7 @@ const Todo = ({ onClick, completed, newText, onDoubleClicked, disabled, edit, de
   onDoubleClick={onDoubleClicked} 
     
     style={{
-      listStyleType: 'none', borderBottom:'solid gray 1px' 
+      listStyleType: 'none', borderBottom:'solid #eff2f5 1px' 
     }}
   >
   <div >
@@ -25,7 +25,8 @@ const Todo = ({ onClick, completed, newText, onDoubleClicked, disabled, edit, de
       color: completed ? 'gray' : '#000',
       textDecorationColor: 'gray',
       background:'white',
-      border:'none'
+      border:'none',
+      borderBottom:'solid #eff2f5 1px' 
   }}
    value={newText} 
    disabled={disabled} 
