@@ -14,7 +14,7 @@ const Todo = ({ onClick, completed, newText, onDoubleClicked, disabled, edit, de
     }}
   >
   <div >
-  <form onSubmit={e => {
+  <form style={{height: '31px'}}onSubmit={e => {
         e.preventDefault()
         onDoubleClicked()
       }}>
@@ -26,7 +26,8 @@ const Todo = ({ onClick, completed, newText, onDoubleClicked, disabled, edit, de
       textDecorationColor: 'gray',
       background:'white',
       border:'none',
-      borderBottom:'solid #eff2f5 1px' 
+      borderBottom:'solid #eff2f5 1px',
+      height: '29px' 
   }}
    value={newText} 
    disabled={disabled} 

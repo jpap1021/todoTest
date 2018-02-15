@@ -5,7 +5,7 @@ import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
   <div style={{
-    flexDirection: 'column', marginLeft:'400px',  marginTop:'250px',background:'white',width: '267px'
+    flexDirection: 'column',background:'white',width: '267px'
   }}>
     <AddTodo />
     <VisibleTodoList />

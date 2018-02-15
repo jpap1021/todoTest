@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Todo from './Todo'
 
 const TodoList = ({ todos, onTodoClick, disabled,edit, dispatch, delet }) => (
-  <ul  style={{padding: '0px',marginTop:'6px'
+  <ul  style={{padding: '0px',marginTop:'0px'
   }}
   >
     {todos.map(todo =>

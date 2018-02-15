@@ -25,6 +25,7 @@ const todos = (state = [], action) => {
           if(cont === 0){
             comple = !todo.completed;
             cont++; 
+            console.log(cont)
           }
           todo.completed=comple;
           return todo

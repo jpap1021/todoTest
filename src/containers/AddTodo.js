@@ -18,14 +18,14 @@ let AddTodo = ({ dispatch }) => {
         input.value = ''
       }}>
        <button  style={{background:'white',    border: 'none',
-    borderBottom:'solid #eff2f5 1px'}} 
+    borderBottom:'solid #eff2f5 1px', height: '34px'}} 
     type="button" onClick={e =>{
          dispatch(checkAll())
        }
        }>
        <FaAngleDown />
         </button>
-        <input style={{ width: '237px',border:'none', borderBottom: 'solid #eff2f5 1px'}} ref={node => {
+        <input style={{ width: '241px',border:'none', borderBottom: 'solid #eff2f5 1px', height: '30px'}} ref={node => {
           input = node
         }} />
       </form>
