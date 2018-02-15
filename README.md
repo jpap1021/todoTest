@@ -1,4 +1,14 @@
 
+1 clone this project
+https://github.com/jpap1021/todoTest.git
+
+2 cd todoTest
+
+3 npm install
+
+4 npm start
+
+5 open http://localhost:3000 in your browser, (google chrome)
 
 
 
