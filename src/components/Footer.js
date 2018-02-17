@@ -1,12 +1,14 @@
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
-const Footer = (todos) => (
+
+const Footer = ({total, totalunmarket}) => (
   <div style={{borderColor:'black' }}>
-  <p style={{fontSize:'10px'}}>
-    <span style={{padding:'20px'}}>
-    items left
+  <p style={{fontSize:'10px', display:'flex', justifyContent:'space-between'}}>
+    <span>
+    items left  {total}  
     </span>
+    <span>
     <FilterLink  filter="SHOW_ALL" >
       All
     </FilterLink>
@@ -18,8 +20,10 @@ const Footer = (todos) => (
     <FilterLink filter="SHOW_COMPLETED">
       Completed
     </FilterLink>
-    <span style={{padding:'20px'}}>
-      clear completed
+    </span>
+    
+    <span>
+    {totalunmarket} clear completed
       </span >
   </p>
   </div>

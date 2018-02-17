@@ -54,10 +54,8 @@ return state.filter(todo =>{
   }
 }
 )
-
     default:
-      return state
-      
+      return state      
   }
  
 }

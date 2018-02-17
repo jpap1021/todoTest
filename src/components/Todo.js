@@ -10,7 +10,7 @@ const Todo = ({ onClick, completed, newText, onDoubleClicked, disabled, edit, de
   onDoubleClick={onDoubleClicked} 
     
     style={{
-      listStyleType: 'none', borderBottom:'solid #eff2f5 1px' 
+      listStyleType: 'none', borderBottom:'solid #eff2f5 1px', display:'flex', justifyContent:'space-between', alignItems:'center' 
     }}
   >
   <div >
@@ -33,11 +33,11 @@ const Todo = ({ onClick, completed, newText, onDoubleClicked, disabled, edit, de
    disabled={disabled} 
    onChange={(e)=>{edit(e.target.value)}}
    autoFocus={true}
-  /> <FaClose onClick={delet} />
+  /> 
  
 </form>
   </div>
-
+  <FaClose onClick={delet} />
    
   </li>
 )
